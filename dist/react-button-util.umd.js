@@ -1,11 +1,10 @@
-import "react";
 var s = { exports: {} }, e = {};
 var x;
-function a() {
+function p() {
   if (x) return e;
   x = 1;
-  var n = /* @__PURE__ */ Symbol.for("react.transitional.element"), p = /* @__PURE__ */ Symbol.for("react.fragment");
-  function i(R, r, t) {
+  var n = /* @__PURE__ */ Symbol.for("react.transitional.element"), R = /* @__PURE__ */ Symbol.for("react.fragment");
+  function i(a, r, t) {
     var u = null;
     if (t !== void 0 && (u = "" + t), r.key !== void 0 && (u = "" + r.key), "key" in r) {
       t = {};
@@ -14,20 +13,20 @@ function a() {
     } else t = r;
     return r = t.ref, {
       $$typeof: n,
-      type: R,
+      type: a,
       key: u,
       ref: r !== void 0 ? r : null,
       props: t
     };
   }
-  return e.Fragment = p, e.jsx = i, e.jsxs = i, e;
+  return e.Fragment = R, e.jsx = i, e.jsxs = i, e;
 }
 var d;
 function l() {
-  return d || (d = 1, s.exports = a()), s.exports;
+  return d || (d = 1, s.exports = p()), s.exports;
 }
 var v = l();
-const E = ({ label: n = "Click Me" }) => /* @__PURE__ */ v.jsx(
+const c = ({ label: n = "Click Me" }) => /* @__PURE__ */ v.jsx(
   "button",
   {
     style: {
@@ -42,5 +41,5 @@ const E = ({ label: n = "Click Me" }) => /* @__PURE__ */ v.jsx(
   }
 );
 export {
-  E as Button
+  c as Button
 };
