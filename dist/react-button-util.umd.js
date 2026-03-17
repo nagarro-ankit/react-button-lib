@@ -1,1 +1,46 @@
-(function(e){typeof define=="function"&&define.amd?define(["react"],e):e()})((function(){"use strict";var e={exports:{}},n={};var s;function a(){if(s)return n;s=1;var u=Symbol.for("react.transitional.element"),p=Symbol.for("react.fragment");function x(l,r,t){var i=null;if(t!==void 0&&(i=""+t),r.key!==void 0&&(i=""+r.key),"key"in r){t={};for(var o in r)o!=="key"&&(t[o]=r[o])}else t=r;return r=t.ref,{$$typeof:u,type:l,key:i,ref:r!==void 0?r:null,props:t}}return n.Fragment=p,n.jsx=x,n.jsxs=x,n}var d;function R(){return d||(d=1,e.exports=a()),e.exports}var c=R();const f=({label:u="Click Me"})=>c.jsx("button",{style:{padding:"10px 16px",background:"#000",color:"#fff",border:"none",borderRadius:"6px",cursor:"pointer"},children:u});window.ReactButton=f}));
+import "react";
+var s = { exports: {} }, e = {};
+var x;
+function a() {
+  if (x) return e;
+  x = 1;
+  var n = /* @__PURE__ */ Symbol.for("react.transitional.element"), p = /* @__PURE__ */ Symbol.for("react.fragment");
+  function i(R, r, t) {
+    var u = null;
+    if (t !== void 0 && (u = "" + t), r.key !== void 0 && (u = "" + r.key), "key" in r) {
+      t = {};
+      for (var o in r)
+        o !== "key" && (t[o] = r[o]);
+    } else t = r;
+    return r = t.ref, {
+      $$typeof: n,
+      type: R,
+      key: u,
+      ref: r !== void 0 ? r : null,
+      props: t
+    };
+  }
+  return e.Fragment = p, e.jsx = i, e.jsxs = i, e;
+}
+var d;
+function l() {
+  return d || (d = 1, s.exports = a()), s.exports;
+}
+var v = l();
+const E = ({ label: n = "Click Me" }) => /* @__PURE__ */ v.jsx(
+  "button",
+  {
+    style: {
+      padding: "10px 16px",
+      background: "#000",
+      color: "#fff",
+      border: "none",
+      borderRadius: "6px",
+      cursor: "pointer"
+    },
+    children: n
+  }
+);
+export {
+  E as Button
+};

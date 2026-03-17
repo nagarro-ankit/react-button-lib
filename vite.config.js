@@ -8,7 +8,7 @@ export default defineConfig({
       entry: "src/index.js",
       name: "ReactButton",
       fileName: () => "react-button-util.umd.js",
-      formats: ["umd"]
+      formats: ["es"]
     },
     rollupOptions: {
       external: ["react", "react-dom"],

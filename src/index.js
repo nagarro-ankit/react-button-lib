@@ -1,3 +1,1 @@
-import Button from "./Button";
-
-window.ReactButton = Button;
+export * from "./Button";

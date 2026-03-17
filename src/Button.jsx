@@ -1,6 +1,6 @@
 import React from "react";
 
-const Button = ({ label = "Click Me" }) => {
+export const Button = ({ label = "Click Me" }) => {
   return (
     <button
       style={{
